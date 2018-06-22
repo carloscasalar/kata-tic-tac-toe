@@ -1,20 +1,6 @@
 'use strict';
 const FieldAlreadyPlayedException = require('./FieldAlreadyPlayedException');
-
-class Field {
-    constructor(row, column){
-        this.row = row;
-        this.column = column;
-    }
-
-    play(player){
-        this.player = player;
-    }
-
-    get played () {
-        return !!this.player;
-    }
-}
+const Field = require('./Field');
 
 class Game {
     constructor() {
