@@ -46,6 +46,10 @@ class Game {
             .find(field => field.row === row && field.column === column)
             .played;
     }
+
+    get isFinished() {
+        return this.fields.every(field => field.played);
+    }
 }
 
 module.exports = Game;

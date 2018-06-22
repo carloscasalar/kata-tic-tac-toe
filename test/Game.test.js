@@ -26,3 +26,8 @@ test('a player should be able to mark a field', () => {
     game.play('X', ROW_ONE, COLUMN_ONE);
     expect(game.hasFieldBeenPlayed(ROW_ONE, COLUMN_ONE)).toBe(true);
 });
+
+test('if all field has been played game should be finished', () => {
+  game.fields.forEach(field => game.play('X', field.row, field.column));
+  expect(game.isFinished).toBe(true);
+});
