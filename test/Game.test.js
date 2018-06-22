@@ -1,6 +1,7 @@
 'use strict';
 
 const Game = require('../src/Game');
+const FieldAlreadyPlayedException = require('../src/FieldAlreadyPlayedException');
 
 const ROW_ONE = 1;
 const COLUMN_ONE = 1;
@@ -30,4 +31,11 @@ test('a player should be able to mark a field', () => {
 test('if all field has been played game should be finished', () => {
   game.fields.forEach(field => game.play('X', field.row, field.column));
   expect(game.isFinished).toBe(true);
+});
+
+test('if a field has already been played it should not be able to be played again', () =>{
+  game.play('X', ROW_ONE, COLUMN_ONE);
+
+  expect(() => game.play('O', ROW_ONE, COLUMN_ONE)).toThrowError(FieldAlreadyPlayedException);
+  expect(game.playerWhoPlaysField(ROW_ONE, COLUMN_ONE)).toEqual('X');
 });

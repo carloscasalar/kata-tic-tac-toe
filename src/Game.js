@@ -1,3 +1,6 @@
+'use strict';
+const FieldAlreadyPlayedException = require('./FieldAlreadyPlayedException');
+
 class Field {
     constructor(row, column){
         this.row = row;
@@ -36,15 +39,26 @@ class Game {
     }
 
     play(player, row, column){
-        this.fields
-            .find(field => field.row === row && field.column === column)
-            .play(player)
+        const field = this.fields
+            .find(field => field.row === row && field.column === column);
+
+        if(field.played){
+            throw new FieldAlreadyPlayedException("Field already played");
+        }
+
+        field.play(player);
     }
 
     hasFieldBeenPlayed(row, column){
         return this.fields
             .find(field => field.row === row && field.column === column)
             .played;
+    }
+
+    playerWhoPlaysField(row, column) {
+        return this.fields
+            .find(field => field.row === row && field.column === column)
+            .player;
     }
 
     get isFinished() {

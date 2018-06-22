@@ -1,23 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1529690562987" clover="3.2.0">
-  <project timestamp="1529690562987" name="All files">
-    <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="12" coveredmethods="12" elements="30" coveredelements="30" complexity="0" loc="14" ncloc="14" packages="1" files="1" classes="1">
+<coverage generated="1529691540030" clover="3.2.0">
+  <project timestamp="1529691540030" name="All files">
+    <metrics statements="22" coveredstatements="22" conditionals="8" coveredconditionals="8" methods="15" coveredmethods="15" elements="45" coveredelements="45" complexity="0" loc="22" ncloc="22" packages="1" files="2" classes="2">
+      <file name="FieldAlreadyPlayedException.js" path="/Users/carloscasalar/nodes/katas/kata-tic-tac-toe/src/FieldAlreadyPlayedException.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+      </file>
       <file name="Game.js" path="/Users/carloscasalar/nodes/katas/kata-tic-tac-toe/src/Game.js">
-        <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="12" coveredmethods="12"/>
-        <line num="3" count="45" type="stmt"/>
-        <line num="4" count="45" type="stmt"/>
-        <line num="8" count="10" type="stmt"/>
-        <line num="12" count="19" type="stmt"/>
-        <line num="18" count="5" type="stmt"/>
-        <line num="19" count="5" type="stmt"/>
-        <line num="23" count="5" type="stmt"/>
-        <line num="35" count="45" type="stmt"/>
-        <line num="39" count="10" type="stmt"/>
-        <line num="40" count="46" type="cond" truecount="2" falsecount="0"/>
-        <line num="45" count="1" type="stmt"/>
-        <line num="46" count="1" type="cond" truecount="2" falsecount="0"/>
-        <line num="51" count="9" type="stmt"/>
-        <line num="55" count="1" type="stmt"/>
+        <metrics statements="20" coveredstatements="20" conditionals="8" coveredconditionals="8" methods="14" coveredmethods="14"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="6" count="54" type="stmt"/>
+        <line num="7" count="54" type="stmt"/>
+        <line num="11" count="11" type="stmt"/>
+        <line num="15" count="31" type="stmt"/>
+        <line num="21" count="6" type="stmt"/>
+        <line num="22" count="6" type="stmt"/>
+        <line num="26" count="6" type="stmt"/>
+        <line num="38" count="54" type="stmt"/>
+        <line num="42" count="12" type="stmt"/>
+        <line num="43" count="48" type="cond" truecount="2" falsecount="0"/>
+        <line num="45" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="49" count="11" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="54" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="60" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="65" count="9" type="stmt"/>
+        <line num="69" count="1" type="stmt"/>
       </file>
     </metrics>
   </project>
