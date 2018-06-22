@@ -3,9 +3,10 @@ const FieldAlreadyPlayedException = require('./FieldAlreadyPlayedException');
 const Field = require('./Field');
 
 class Game {
-    constructor() {
+    constructor(firstPlayer) {
         this.players = ['X', 'O'];
         this.fields = this.makeFields();
+        this.nextPlayer = firstPlayer;
     }
 
     makeFields() {
@@ -33,6 +34,11 @@ class Game {
         }
 
         field.play(player);
+    }
+
+    playTurn(row, column){
+        this.play(this.nextPlayer, row, column);
+        this.nextPlayer = this.players.find(player => player !== this.nextPlayer);
     }
 
     hasFieldBeenPlayed(row, column){
