@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1529689303950" clover="3.2.0">
+  <project timestamp="1529689303950" name="All files">
+    <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4" elements="11" coveredelements="11" complexity="0" loc="7" ncloc="7" packages="1" files="1" classes="1">
+      <file name="Game.js" path="/Users/carloscasalar/nodes/katas/kata-tic-tac-toe/src/Game.js">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="3" count="18" type="stmt"/>
+        <line num="4" count="18" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="27" count="18" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+      </file>
+    </metrics>
+  </project>
+</coverage>
